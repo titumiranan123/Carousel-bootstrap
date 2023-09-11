@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel</title>
+    <!-- Include Bootstrap CSS and JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <ol style="z-index: 99;" class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            </ol>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div style="position: relative;" class="carousel-item active">
+                    <img src="./image/slider-bg.jpg" alt="Slide 1">
+                    <div class="animate__backInLeft"
+                        style="position: absolute; top: 30%; left: 15%; color: white; animation-duration: 1s;">
+                        <h1>We welcome Challenge</h1>
+                        <p>Specialized bespoke solution</p>
+                        <p>Helping every sector across the world</p>
+                        <p>Tailor-made solutions that best fit clients' needs</p>
+                    </div>
+
+                </div>
+                <div style="position: relative;" class="carousel-item">
+                    <img src="./image/slider-bg.jpg" alt="Slide 2">
+                    <div style="position: absolute; top: 30%; left: 25%;" class="logo-container">
+                        <div class="logo">
+                            <img style="width: 112px; height: 112px;" src="./image/symbol-trans.png" alt="">
+                        </div>
+                        <img class="animate__rotateInDownLeft"
+                            style="height: 90px ; width: 100px; animation-duration: 3s; position: absolute; top: -106px;"
+                            src="./image/slide2-icon1.png" alt="">
+                        <img class="animate__rotateInDownLeft "
+                            style="height: 90px ; width: 100px; animation-duration: 3s; position: absolute; top: -35px; right: 122px;"
+                            src="./image/slide2-icon3.png" alt="">
+                        <img class="animate__rotateInDownLeft"
+                            style="height: 90px ; width: 100px; animation-duration: 3s; position: absolute; top: -35px; right: -122px;"
+                            src="./image/slide2-icon3.png" alt="">
+                        <img class="animate__rotateInDownLeft"
+                            style="height: 90px ; width: 100px; animation-duration: 3s; position: absolute; top: 85px; right: -115px;"
+                            src="./image/slide2-icon2.png" alt="">
+
+                        <img class="animate__rotateInDownLeft"
+                            style="height: 90px ; width: 100px; animation-duration: 3s; position: absolute; top: 115px; left: -50px;"
+                            src="./image/slide2-icon1.png" alt="">
+
+
+                    </div>
+                    <div class="animate__backInRight"
+                        style="position: absolute; top: 20%; right: 50px; width: 400px; animation-duration: 2s; color: white;"
+                        class="heading">
+                        <h1>We are experts in what we do Meeting the demands for most of the clients from desing to
+                            delivery
+                        </h1>
+                        <p>Offering innovative and flexible approach to every project</p>
+
+                    </div>
+                </div>
+                <div style="position: relative;" class="carousel-item">
+                    <img src="./image/slider-bg.jpg" alt="Slide 3">
+                    <div style="display: flex;  gap: 10px; position: absolute; bottom: 0; left: 300px; z-index: 1;"
+                        class="box-container">
+                        <div style="height: 220px; width: 150px; background: rgb(150, 40, 40); animation-duration: 2s;"
+                            class="animate__bounceInUp">
+                            box1
+                            <img style="height: 125px; width: 121px; z-index: 9;position: absolute;     top: -90px;
+                        left: -26px; animation-duration: 2s;" class="animate__rotateInDownLeft"
+                                src="./image/slider3-info1.png" alt="">
+                        </div>
+                        <div style="height: 220px; width: 150px; background: rgb(150, 40, 40); position: relative; animation-duration: 2s;"
+                            class="animate__bounceInUp">
+                            box1
+                            <img style="height: 125px; width: 121px; z-index: 9;position: absolute;     top: -90px;
+                        left: -26px; animation-duration: 2s;" class="animate__rotateInDownLeft"
+                                src="./image/slider3-info1.png" alt="">
+                        </div>
+
+                        <div style="height: 220px; width: 150px; background: rgb(150, 40, 40); position: relative; animation-duration: 2s;"
+                            class="animate__bounceInUp">
+                            box1
+                            <img style="height: 125px; width: 121px; z-index: 9;animation-duration: 2s; position: absolute;     top: -90px;
+                        left: -26px; animation-duration: 2s;" class="animate__rotateInDownLeft"
+                                src="./image/slider3-info1.png" alt="">
+                        </div>
+                        <div style="height: 220px; width: 150px; background: rgb(150, 40, 40); position: relative; animation-duration: 2s;"
+                            class="animate__bounceInUp">
+                            box1
+                            <img style="height: 125px; width: 121px; z-index: 9;  position: absolute;     top: -90px;
+                        left: -26px; animation-duration: 2s;" class="animate__rotateInDownLeft"
+                                src="./image/slider3-info1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- slide-4  -->
+                <div style="position: relative;" class="carousel-item">
+                    <img src="./image/slider-bg.jpg" alt="Slide 4">
+                    <div style="position: absolute; top: 20%; left: 10%; color: white; animation-duration: 2s;"
+                        style="color:white ; background: rgba(146, 144, 146, 0.5) ; padding: 10px;"
+                        class="animate__backInLeft">
+                        <h1>Yes we stand out in a crowd . <br> we are capable of carry out <span class="complex">
+                                complex</span>
+                            <br> Projects in an innovative way
+                        </h1>
+                        <p>Specialised solutions for every sector across the world</p>
+                    </div>
+                    <div style="position: absolute; top: 20%; right: 10%; color: white; animation-duration: 2s;"
+                        class="animate__backInRight">
+                        <video width="320" height="240" controls>
+                            <source src="https://www.youtube.com/embed/668nUCeBHyY?si=kf27azpBk0hD06o" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
